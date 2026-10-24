@@ -1,0 +1,112 @@
+{
+  "brand": "MMD Craft",
+  "mark": "MMD",
+  "whatsapp": "",
+  "email": "",
+  "city": "",
+  "hours": "Mon–Sat, 10:00–19:00",
+  "hero": {
+    "kicker": "MDF · Acrylic · Sublimation",
+    "lines": ["Cut in light.", "Finished in colour."],
+    "lede": "Key holders, magnets, and wall pieces. Printed, cut, and finished to the size you send.",
+    "images": [
+      "images/krishna-flute.jpg",
+      "images/owl-family.jpg",
+      "images/arch-radha-krishna.jpg"
+    ]
+  },
+  "story": {
+    "kicker": "How a piece is built",
+    "title": "Layers, then a finished piece.",
+    "lede": "Scroll and the sheet comes apart: the core, the print, and the face.",
+    "image": "images/arch-radha-krishna.jpg",
+    "layers": [
+      {
+        "id": "core",
+        "name": "Core",
+        "text": "MDF for a matte cut, or acrylic when you want a glass-like body. Thickness is your choice."
+      },
+      {
+        "id": "print",
+        "name": "Print",
+        "text": "Sublimation fuses the full-colour artwork into the face. Pick a piece from the floor, or send your own art."
+      },
+      {
+        "id": "face",
+        "name": "Face",
+        "text": "A clear acrylic skin, a sealed edge, and the hooks or magnet that make it useful."
+      }
+    ]
+  },
+  "showcase": [
+    {
+      "id": "art",
+      "index": "01",
+      "title": "Artwork",
+      "text": "The picture is locked first. Devotional sets, animals, characters, or a file you send.",
+      "image": "images/cosmic-radha-krishna.jpg"
+    },
+    {
+      "id": "print",
+      "index": "02",
+      "title": "Print",
+      "text": "Sublimation lays the colour into a coated sheet so the art stays in the surface.",
+      "image": "images/krishna-flute.jpg"
+    },
+    {
+      "id": "cut",
+      "index": "03",
+      "title": "Cut",
+      "text": "The silhouette is cut to the drawing. This owl panel was on the bench for Keoladeo National Park.",
+      "image": "images/keoladeo-owl.jpg"
+    },
+    {
+      "id": "hooks",
+      "index": "04",
+      "title": "Hardware",
+      "text": "Hooks, holes, and edges are fitted after the cut. Key rails are counted to the piece.",
+      "image": "images/owl-family.jpg"
+    },
+    {
+      "id": "check",
+      "index": "05",
+      "title": "Finish check",
+      "text": "Small pieces, like this Ganesha, are checked in the hand before they leave.",
+      "image": "images/ganesha-lotus.jpg"
+    }
+  ],
+  "about": {
+    "kicker": "The studio",
+    "title": "Made to order, piece by piece.",
+    "paragraphs": [
+      "MMD Craft prints and cuts decorative panels. The floor is key holders, magnets, and wall pieces in MDF, acrylic, and sublimation.",
+      "There is no cart on this site. You choose a piece or send your own size, then the order goes out on WhatsApp with the full specification."
+    ],
+    "points": [
+      "MDF for matte, paintable, sturdy cuts",
+      "Acrylic for a clear, glossy face",
+      "Sublimation for full-colour artwork",
+      "Hooks, holes, thickness, and quantity set by you"
+    ]
+  },
+  "contact": {
+    "kicker": "Write to the bench",
+    "title": "Tell us what to make.",
+    "lede": "Call, or send a WhatsApp with the material, the size, and the quantity. Attach your artwork in the same chat."
+  },
+  "bulk": {
+    "kicker": "For shops and events",
+    "title": "Bulk enquiries.",
+    "lede": "Same materials, larger counts. Tell us the piece, the quantity, and when you need them."
+  },
+  "sale": {
+    "kicker": "Marked on the floor",
+    "title": "Sale on.",
+    "lede": "These pieces are flagged for sale in the catalog. The rate is confirmed on WhatsApp."
+  },
+  "working": {
+    "kicker": "In the shop today",
+    "title": "Working on.",
+    "lede": "Fresh cuts and pieces still on the bench. You can still ask for one."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "id": "key-holders",
+      "name": "Key holders",
+      "blurb": "Wall pieces with a counted set of metal hooks."
+    },
+    {
+      "id": "wall-art",
+      "name": "Wall art",
+      "blurb": "Cut silhouettes and display panels."
+    },
+    {
+      "id": "magnets",
+      "name": "Magnets",
+      "blurb": "Small printed pieces for the fridge and the board."
+    }
+  ]
+}

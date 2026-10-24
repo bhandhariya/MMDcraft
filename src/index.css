@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --cyan: #3ef0ff;
+}
+
+html {
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(900px 520px at 85% -10%, rgba(62, 240, 255, 0.16), transparent 55%),
+    radial-gradient(680px 420px at -10% 18%, rgba(213, 222, 232, 0.07), transparent 50%),
+    #07080d;
+  color: #e8eef5;
+  font-family: Outfit, "Segoe UI", sans-serif;
+}
+
+::selection {
+  background: #3ef0ff;
+  color: #07080d;
+}
+
+:focus-visible {
+  outline: 2px solid #3ef0ff;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+html[data-motion='reduce'] .drift,
+html[data-motion='reduce'] .ticker-track,
+html[data-motion='reduce'] .holo {
+  animation: none !important;
+}
+
+.grid-fade {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(circle at center, black, transparent 78%);
+}
+
+.text-shine {
+  background: linear-gradient(100deg, #f7fbff 8%, #3ef0ff 42%, #d5dee8 68%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(18px);
+}
+
+.holo-frame {
+  background:
+    linear-gradient(#10141c, #10141c) padding-box,
+    linear-gradient(130deg, rgba(62, 240, 255, 0.85), rgba(213, 222, 232, 0.2), rgba(62, 240, 255, 0.12), rgba(255, 255, 255, 0.72)) border-box;
+  border: 1px solid transparent;
+}
+
+.holo {
+  background: linear-gradient(120deg, rgba(62, 240, 255, 0.16), rgba(255, 255, 255, 0.04), rgba(180, 220, 255, 0.12));
+  background-size: 200% 200%;
+  animation: holo 9s ease infinite;
+}
+
+.nav-scroll {
+  scrollbar-width: none;
+}
+
+.nav-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  gap: 2.5rem;
+  animation: ticker 36s linear infinite;
+}
+
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes holo {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes drift {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.drift { animation: drift 7.5s ease-in-out infinite; }
+.drift-late { animation-delay: -2.4s; }
+.drift-later { animation-delay: -4.2s; }
+
+@layer components {
+  .btn {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-medium tracking-wide transition;
+  }
+
+  .btn-solid {
+    @apply btn bg-cyan text-obsidian hover:bg-white;
+  }
+
+  .btn-ghost {
+    @apply btn border border-white/15 bg-white/5 text-silver hover:border-cyan/60 hover:text-white;
+  }
+
+  .field {
+    @apply mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-silver/40 focus:border-cyan/60;
+  }
+
+  .chip {
+    @apply min-h-11 rounded-full border border-white/15 px-4 text-sm text-silver transition hover:border-cyan/50 hover:text-white;
+  }
+
+  .chip-on {
+    @apply border-cyan/70 bg-cyan/10 text-white shadow-glow;
+  }
+
+  select.field option {
+    background: #10141c;
+    color: #e8eef5;
+  }
+}

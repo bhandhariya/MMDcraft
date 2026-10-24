@@ -1,0 +1,28 @@
+{
+  "materials": [
+    {
+      "id": "mdf",
+      "name": "MDF",
+      "description": "Dense matte board. Clean edges, sturdy at larger sizes.",
+      "thicknesses": [3, 4, 6, 8, 12]
+    },
+    {
+      "id": "acrylic",
+      "name": "Acrylic",
+      "description": "Gloss sheet with a glass-like face. Laser-cut edges.",
+      "thicknesses": [2, 3, 5, 8]
+    },
+    {
+      "id": "sublimation",
+      "name": "Sublimation",
+      "description": "Full-colour print fused into a coated panel.",
+      "thicknesses": [3, 5, 6]
+    }
+  ],
+  "limits": {
+    "minMm": 20,
+    "maxMm": 1200,
+    "minQty": 1,
+    "maxQty": 500
+  }
+}
